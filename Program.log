@@ -1,0 +1,18 @@
+ERROR - file rusak
+Traceback (most recent call last):
+  File "/storage/emulated/0/project_diary/storage.py", line 37, in load_file
+    return [cls.from_dict(x) for x in hisfile]
+            ~~~~~~~~~~~~~^^^
+  File "/storage/emulated/0/project_diary/storage.py", line 27, in from_dict
+    dtai =cls(data["catatan"],data["waktu"])
+                              ~~~~^^^^^^^^^
+KeyError: 'waktu'
+ERROR - file rusak
+Traceback (most recent call last):
+  File "/storage/emulated/0/project_diary/storage.py", line 40, in load_file
+    return [cls.from_dict(x) for x in hisfile]
+            ~~~~~~~~~~~~~^^^
+  File "/storage/emulated/0/project_diary/storage.py", line 30, in from_dict
+    dtai =cls(data["id"],data["catatan"],data["waktu"])
+              ~~~~^^^^^^
+KeyError: 'id'
